@@ -1,151 +1,150 @@
 // ============================================================================
-// SITE CONTENT — edit everything here. None of the components below contain
-// hard-coded personal text, so this is the only file you need to touch to
-// make the site yours.
+// SITE CONTENT — यहाँ सब कुछ बदलें। नीचे के components में कोई भी
+// personal text hard-code नहीं है, इसलिए सिर्फ यही एक file edit करनी है।
 // ============================================================================
 
 const content = {
   // --- Envelope / opening card -------------------------------------------
   envelope: {
-    label: "A Card For You",
-    sealText: "Open",
-    fromText: "From all of us, to the best Dad",
+    label: "आपके लिए एक कार्ड",
+    sealText: "खोलें",
+    fromText: "हम सबकी तरफ से, सबसे अच्छे पापा को",
   },
 
   // --- Hero ----------------------------------------------------------------
   hero: {
-    eyebrow: "Happy Father's Day",
-    // Use \n where you'd like a manual line break in the headline.
-    title: "To the man who taught us\nhow to be brave.",
+    eyebrow: "हैप्पी फादर्स डे",
+    // \n जहाँ चाहें वहाँ line break के लिए use करें।
+    title: "उस इंसान के लिए\nजिसने हमें हिम्मत देना सिखाया।",
     subtitle:
-      "Some people get a hero in storybooks. We got one in real life — and he's ours. Today is for you, Dad.",
-    ctaPrimary: "Read Your Letter",
-    ctaSecondary: "See Our Memories",
+      "कुछ लोगों को किताबों में हीरो मिलते हैं। हमें असल ज़िंदगी में मिला — और वो हमारे पापा हैं। आज का दिन सिर्फ आपका है, पापा।",
+    ctaPrimary: "पत्र पढ़ें",
+    ctaSecondary: "यादें देखें",
   },
 
-  // --- Hidden messages — small buttons that reveal a surprise note ---------
-  // Shown as a row of tap-to-reveal cards between the hero and the reasons
-  // section. Add or remove as many as you like.
+  // --- Hidden messages — छुपे हुए संदेश -----------------------------------
+  // Hero और reasons section के बीच tap-to-reveal cards।
+  // जितने चाहें उतने add या remove करें।
   secrets: [
     {
-      label: "Tap for a secret",
-      message: "You don't say it often, but we know you're proud of us. We can tell.",
+      label: "एक राज़ जानें",
+      message: "आप कम बोलते हैं, लेकिन हम जानते हैं आपको हम पर गर्व है। हम महसूस कर सकते हैं।",
     },
     {
-      label: "Tap for a memory",
-      message: "Remember teaching us to ride a bike, running behind us the whole street, refusing to let go until we asked you to?",
+      label: "एक याद जानें",
+      message: "याद है जब आपने हमें साइकिल चलाना सिखाया था? पूरी गली दौड़े थे आप हमारे पीछे, छोड़ा तब जब हमने खुद कहा।",
     },
     {
-      label: "Tap for a confession",
-      message: "We used to think you knew everything. Now we just think you tried harder than anyone else we know.",
+      label: "एक सच्चाई जानें",
+      message: "पहले लगता था आपको सब पता है। अब समझ आया — आपने बस हम सबसे ज़्यादा मेहनत की।",
     },
   ],
 
   // --- "Reasons Why You're the Best Dad" — flip cards ----------------------
-  // Add, remove, or reorder as many as you like.
+  // जितने चाहें उतने add, remove या reorder करें।
   reasons: [
     {
       icon: "🛠️",
-      title: "You fix everything",
-      back: "Bikes, hearts, bad days — there was never a problem you couldn't make a little less scary just by showing up.",
+      title: "आप सब कुछ ठीक कर देते हैं",
+      back: "साइकिल हो, दिल हो, या बुरा दिन — कोई भी मुश्किल आपके आने से थोड़ी हल्की हो जाती थी।",
     },
     {
       icon: "📞",
-      title: "You always pick up",
-      back: "Any hour, any reason, any mood. The phone rings twice and you're already there.",
+      title: "आप हमेशा उठाते हैं फोन",
+      back: "किसी भी वक्त, किसी भी वजह से — दो बार बजते ही आप हाज़िर।",
     },
     {
       icon: "💪",
-      title: "You make hard look easy",
-      back: "We never saw how much you carried — you made sure of that. We see it now.",
+      title: "आपने मुश्किलों को आसान दिखाया",
+      back: "हमने कभी नहीं देखा आपने कितना बोझ उठाया — आपने देखने ही नहीं दिया। अब दिखता है।",
     },
     {
       icon: "😂",
-      title: "Your jokes are still terrible",
-      back: "And we still laugh every time. Some things just don't get old, Dad.",
+      title: "आपके jokes अभी भी बेकार हैं",
+      back: "और हम अभी भी हर बार हँसते हैं। कुछ चीज़ें पुरानी नहीं होतीं, पापा।",
     },
     {
       icon: "🌱",
-      title: "You let us grow",
-      back: "You held on tight when we needed it, and let go just enough for us to find our own way.",
+      title: "आपने आगे बढ़ने दिया",
+      back: "जब ज़रूरत थी तो थामे रहे, और जब वक्त आया तो हाथ छोड़ा ताकि हम अपना रास्ता खोज सकें।",
     },
     {
       icon: "❤️",
-      title: "You love quietly",
-      back: "Not in big speeches, but in the small, constant ways. We noticed every single one.",
+      title: "आपने चुपचाप प्यार किया",
+      back: "बड़े-बड़े भाषणों में नहीं, छोटी-छोटी बातों में। हमने हर एक बात नोटिस की।",
     },
   ],
 
   // --- Timeline --------------------------------------------------------------
-  // image: path to a photo in /public/images — falls back to a soft icon
-  // card automatically if the file isn't there yet.
+  // image: /public/images में photo का path — अगर file नहीं है तो
+  // automatically placeholder दिखेगा।
   timeline: [
     {
-      year: "The Beginning",
-      title: "The day everything changed",
-      text: "You held us for the first time and somehow already knew exactly what to do.",
+      year: "शुरुआत",
+      title: "वो दिन जिसने सब बदल दिया",
+      text: "पहली बार जब आपने हमें गोद में लिया, तब से ही जान गए थे आप — क्या करना है।",
       image: "/images/img1.jpeg",
     },
     {
-      year: "First Steps",
-      title: "Right behind us, every time",
-      text: "Arms out, ready to catch us — that never really stopped, did it?",
+      year: "पहले कदम",
+      title: "हर बार पीछे खड़े रहे",
+      back: "बाहें फैलाए, थामने के लिए तैयार — वो आदत आज भी नहीं गई।",
       image: "/images/img2.jpeg",
     },
     {
-      year: "Growing Up",
-      title: "Lessons we didn't know we needed",
-      text: "How to ride a bike, how to lose gracefully, how to keep trying anyway.",
+      year: "बड़े होते हुए",
+      title: "वो सबक जो तब समझ नहीं आए",
+      text: "साइकिल चलाना, हारना सीखना, और फिर भी कोशिश करते रहना।",
       image: "/images/new.jpeg",
     },
     {
-      year: "Today",
-      title: "Still our person",
-      text: "Different season, same Dad. Still the first call, still the safest place.",
+      year: "आज",
+      title: "आप अभी भी वही हैं",
+      text: "वक्त बदला, मौसम बदला — पापा नहीं बदले। अभी भी पहला फोन आपको ही जाता है।",
       image: "/images/img4.jpeg",
     },
   ],
 
   // --- Memories gallery --------------------------------------------------
-  // Drop your photos into /public/images and update the src + caption below.
-  // The polaroid card will automatically show a placeholder until then.
+  // /public/images में photos डालें और नीचे src + caption update करें।
+  // जो photo अभी नहीं है, वहाँ automatically placeholder दिखेगा।
   memories: [
-    { src: "/images/img5.jpeg", caption: "Summer, a long time ago" },
-    { src: "/images/img6.jpeg", caption: "Your favorite chair" },
-    { src: "/images/img7.jpeg", caption: "That trip we never forgot" },
-    { src: "/images/img8.jpeg", caption: "Sunday mornings" },
-    { src: "/images/img1.jpg", caption: "Birthdays, always candles" },
-    { src: "/images/img2.jpg", caption: "Just us" },
+    { src: "/images/img5.jpeg", caption: "पुरानी यादें" },
+    { src: "/images/img6.jpeg", caption: "एक खास पल" },
+    { src: "/images/img7.jpeg", caption: "साथ बिताए लम्हे" },
+    { src: "/images/img8.jpeg", caption: "प्यारी याद" },
+    { src: "/images/img1.jpeg", caption: "हमारा परिवार" },
+    { src: "/images/img2.jpeg", caption: "दिल के करीब" },
   ],
 
   // --- Handwritten letter ---------------------------------------------------
   letter: {
-    heading: "A Letter to You",
-    greeting: "Dear Dad,",
-    // Each array item becomes its own paragraph.
+    heading: "आपके लिए एक पत्र",
+    greeting: "प्रिय पापा,",
+    // हर array item एक अलग paragraph बनता है।
     paragraphs: [
-      "There's no card big enough to hold everything we mean to say, so we're just going to keep it simple: thank you.",
-      "Thank you for the early mornings, the late nights, the patience you didn't always show but always had. Thank you for teaching us, without ever really sitting us down to do it, what it means to show up for the people you love.",
-      "We don't say it enough, so we're saying it today — we see everything you've done for us, even the things you never mentioned.",
-      "We love you more than we know how to say. Happy Father's Day.",
+      "कोई भी कार्ड इतना बड़ा नहीं जो हमारी सारी बातें समेट सके, इसलिए सीधे कहते हैं — शुक्रिया।",
+      "शुक्रिया उन सुबहों का जब आप जल्दी उठे, उन रातों का जब आप देर से सोए, और उस सब्र का जो दिखाया नहीं पर हमेशा था। शुक्रिया यह सिखाने का — बिना कभी बैठाकर पढ़ाए — कि अपने लोगों के लिए खड़े रहना क्या होता है।",
+      "हम यह कम कहते हैं, इसलिए आज कह रहे हैं — हम देखते हैं वो सब जो आपने हमारे लिए किया, वो भी जो आपने कभी बताया नहीं।",
+      "आपसे जितना प्यार है, उतना कह नहीं सकते। हैप्पी फादर्स डे, पापा।",
     ],
-    signature: "With all our love",
+    signature: "आपके अपनों का प्यार",
   },
 
   // --- Background music ----------------------------------------------------
-  // Drop an mp3 into /public/music and point this at it. The player hides
-  // itself gracefully if the file can't be found.
+  // /public/music में mp3 डालें और यहाँ path दें। अगर file नहीं मिली
+  // तो player automatically hide हो जाएगा।
   music: {
     src: "/music/background-music.mp3",
-    title: "Our Song for You",
+    title: "आपके लिए हमारा गाना",
   },
 
   // --- Closing / footer ------------------------------------------------------
   closing: {
-    heading: "However you celebrate today —",
+    heading: "आज आप जो भी करें —",
     message:
-      "we hope it's filled with everything you've given us, all year, every year.",
-    footerNote: "Made with love, for the best Dad there is.",
+      "हम चाहते हैं वो सब मिले जो आपने हमें साल भर दिया।",
+    footerNote: "प्यार के साथ बनाया, सबसे अच्छे पापा के लिए।",
   },
 }
 
